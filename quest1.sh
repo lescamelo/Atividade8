@@ -1,11 +1,11 @@
 #!/bin/bash
 
 arquivo=$1
-numero=$3
+numero=2
 
 if [ -f ${arquivo} ];
 then
-	count=$(wc -l ${arquivo}  |  cut -c 1)
+	count=$(wc -l ${arquivo} | cut -c 1)
 	if [ ${count} -lt ${numero} ];
 	then
 		echo "Falha: ${arquivo} possui ${count} linhas"
